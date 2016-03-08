@@ -1,7 +1,7 @@
 public class CadastroClientes {
-	private RepositorioClientesArray clientes;
+	private RepositorioClientes clientes;
 
-	public CadastroClientes(RepositorioClientesArray rep) {
+	public CadastroClientes(RepositorioClientes rep) {
 		this.clientes = rep;
 	}
 

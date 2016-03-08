@@ -40,15 +40,15 @@ public class Fachada {
 		clientes.descadastrar(cpf);
 	}
 
-	public void atualizar(Conta c) {
+	public void atualizar(ContaAbstrata c) {
 		contas.atualizar(c);
 	}
 
-	public Conta procurarConta(String n) {
+	public ContaAbstrata procurarConta(String n) {
 		return contas.procurar(n);
 	}
 
-	public void cadastrar(Conta c) {
+	public void cadastrar(ContaAbstrata c) {
 
 		Cliente cli = c.getCliente();
 		if (cli != null) {

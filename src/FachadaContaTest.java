@@ -8,9 +8,9 @@ import org.junit.Test;
 
 public class FachadaContaTest {
 
-	Conta conta123;
-	Conta conta456;
-	Conta conta789;
+	ContaAbstrata conta123;
+	ContaAbstrata conta456;
+	ContaAbstrata conta789;
 	Fachada fachada;
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();

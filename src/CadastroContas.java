@@ -1,16 +1,16 @@
 public class CadastroContas {
 
-	private RepositorioContasArray contas;
+	private RepositorioContas contas;
 
-	public CadastroContas(RepositorioContasArray r) {
+	public CadastroContas(RepositorioContas r) {
 		this.contas = r;
 	}
 
-	public void atualizar(Conta c) {
+	public void atualizar(ContaAbstrata c) {
 		contas.atualizar(c);
 	}
 
-	public void cadastrar(Conta c) {
+	public void cadastrar(ContaAbstrata c) {
 		if (!contas.existe(c.getNumero())) {
 			contas.inserir(c);
 		} else {
@@ -19,12 +19,12 @@ public class CadastroContas {
 	}
 
 	public void creditar(String n, double v) {
-		Conta c = contas.procurar(n);
+		ContaAbstrata c = contas.procurar(n);
 		c.creditar(v);
 	}
 
 	public void debitar(String n, double v) {
-		Conta c = contas.procurar(n);
+		ContaAbstrata c = contas.procurar(n);
 		c.debitar(v);
 	}
 
@@ -32,13 +32,13 @@ public class CadastroContas {
 		contas.remover(n);
 	}
 
-	public Conta procurar(String n) {
+	public ContaAbstrata procurar(String n) {
 		return contas.procurar(n);
 	}
 
 	public void transferir(String origem, String destino, double val) {
-		Conta o = contas.procurar(origem);
-		Conta d = contas.procurar(destino);
+		ContaAbstrata o = contas.procurar(origem);
+		ContaAbstrata d = contas.procurar(destino);
 		o.transferir(d, val);
 	}
 }

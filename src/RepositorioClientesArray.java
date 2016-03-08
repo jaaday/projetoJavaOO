@@ -9,6 +9,7 @@ public class RepositorioClientesArray implements RepositorioClientes{
 		clientes = new Cliente[tamCache];
 	}
 
+	@Override
 	public void atualizar(Cliente c) {
 		int i = procurarIndice(c.getCpf());
 		if (i != -1) {
@@ -18,6 +19,7 @@ public class RepositorioClientesArray implements RepositorioClientes{
 		}
 	}
 
+	@Override
 	public boolean existe(String cpf) {
 		boolean resp = false;
 
@@ -29,6 +31,7 @@ public class RepositorioClientesArray implements RepositorioClientes{
 		return resp;
 	}
 
+	@Override
 	public void inserir(Cliente c) {
 		clientes[indice] = c;
 		indice = indice + 1;
@@ -61,6 +64,7 @@ public class RepositorioClientesArray implements RepositorioClientes{
 		return ind;
 	}
 
+	@Override
 	public void remover(String cpf) {
 		if (existe(cpf)) {
 			int i = this.procurarIndice(cpf);
