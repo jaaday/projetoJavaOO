@@ -1,0 +1,16 @@
+/CadastroClientes.class
+/CadastroContas.class
+/Cliente.class
+/Conta.class
+/ContaAbstrata.class
+/ContaBonificada.class
+/ContaImposto.class
+/Fachada.class
+/FachadaClienteTest.class
+/FachadaContaTest.class
+/Poupanca.class
+/RepositorioClientes.class
+/RepositorioClientesArray.class
+/RepositorioContas.class
+/RepositorioContasArray.class
+/TipoCliente.class
