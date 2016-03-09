@@ -104,6 +104,7 @@ public class FachadaContaTest {
 
 		Assert.assertEquals(35.00, conta123.getSaldo(), 0.0);
 		Assert.assertEquals(105.00, conta456.getSaldo(), 0.0);
+		//Assert.assertNotEquals(0, ((ContaBonificada)conta123).getBonus()); teste feito para saber se o bonus tinha sido alterado com a transferencia
 	}
 
 	@Test
