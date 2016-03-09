@@ -11,16 +11,8 @@ public class ContaImposto extends ContaAbstrata{
 		super(numeroConta, 0, c);
 	}
 
-	@Override
-	public void creditar(double valor) {
-		setSaldo(getSaldo() + valor);
-	}
-	
-	@Override
 	public void debitar(double valor) {
-		// TODO Auto-generated method stub
 		setSaldo(getSaldo() - valor * (1 + TAXA));
-	}
-	
+	}	
 
 }

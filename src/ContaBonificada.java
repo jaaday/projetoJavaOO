@@ -1,4 +1,4 @@
-public class ContaBonificada extends ContaAbstrata {
+public class ContaBonificada extends Conta {
 
 	private double bonus;
 
@@ -18,7 +18,7 @@ public class ContaBonificada extends ContaAbstrata {
 	public double getBonus() {
 		return bonus;
 	}
-	
+
 	@Override
 	public void creditar(double valor) {
 		bonus = bonus + valor * 0.01;

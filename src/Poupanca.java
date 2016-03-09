@@ -1,4 +1,4 @@
-public class Poupanca extends ContaAbstrata {
+public class Poupanca extends Conta {
 	
 	public Poupanca(String num, Cliente cli) {
 		super(num, 0, cli);
@@ -11,11 +11,6 @@ public class Poupanca extends ContaAbstrata {
 	public void renderJuros(double taxa) {
 		double saldo = this.getSaldo();
 		this.creditar(saldo * taxa);
-	}
-
-	@Override
-	public void creditar(double valor) {
-		setSaldo(getSaldo() + valor);
 	}
 
 }

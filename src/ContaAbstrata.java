@@ -7,6 +7,12 @@ public abstract class ContaAbstrata {
 	public ContaAbstrata() {
 	}
 	
+	public ContaAbstrata(String num, Cliente c) {
+		setNumero(num);
+		setSaldo(0);
+		setCliente(c);
+	}
+	
 	public ContaAbstrata(String num, double s, Cliente c) {
 		setNumero(num);
 		setSaldo(s);
@@ -63,16 +69,10 @@ public abstract class ContaAbstrata {
 		c.creditar(v);
 	}
 
-	public abstract void creditar(double valor);
-
-	public void debitar(double valor) {
-		if (valor <= getSaldo()) {
-			setSaldo(getSaldo() - valor);
-			System.out.println("Débito realizado");
-		} else {
-			System.out.println("Saldo insuficiente");
-		}
-		
+	public void creditar(double valor) {
+		setSaldo(getSaldo() + valor);
 	}
+
+	public abstract void debitar(double valor);
 
 }

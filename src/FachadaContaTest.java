@@ -25,9 +25,9 @@ public class FachadaContaTest {
 		Cliente cli2 = new Cliente("222.222.222-22", "Maria", TipoCliente.VIP);
 		Cliente cli3 = new Cliente("333.333.333-33", "Novo", TipoCliente.CLASS);
 
-		conta123 = new Conta("123", cli1);
+		conta123 = new ContaBonificada("123", cli1);
 		conta123.setSaldo(50);
-		conta456 = new Conta("456", cli2);
+		conta456 = new ContaImposto("456", cli2);
 		conta456.setSaldo(90);
 		conta789 = new Poupanca("789", 500, cli3);
 
