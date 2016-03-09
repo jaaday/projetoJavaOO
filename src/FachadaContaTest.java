@@ -64,7 +64,7 @@ public class FachadaContaTest {
 				fachada.procurarConta(conta123.getNumero()));
 		outContent.reset();
 		fachada.cadastrar(conta123);
-		Assert.assertEquals("Conta ja cadastrada\n", outContent.toString());
+		Assert.assertEquals("Conta ja cadastrada", outContent.toString());
 	}
 
 	@Test

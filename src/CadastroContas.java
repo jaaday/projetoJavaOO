@@ -14,7 +14,7 @@ public class CadastroContas {
 		if (!contas.existe(c.getNumero())) {
 			contas.inserir(c);
 		} else {
-			System.out.println("Conta ja cadastrada");
+			System.out.print("Conta ja cadastrada");
 		}
 	}
 

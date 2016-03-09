@@ -14,7 +14,7 @@ public class CadastroClientes {
 		if (!clientes.existe(cpf)) {
 			clientes.inserir(c);
 		} else {
-			System.out.println("Cliente Existente");
+			System.out.print("Cliente Existente");
 		}
 	}
 

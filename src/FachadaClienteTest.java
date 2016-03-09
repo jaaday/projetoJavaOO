@@ -48,7 +48,7 @@ public class FachadaClienteTest {
 		fachada.cadastrar(joao);
 		outContent.reset();
 		fachada.cadastrar(joao);
-		Assert.assertEquals("Cliente Existente\n", outContent.toString());
+		Assert.assertEquals("Cliente Existente", outContent.toString());
 
 	}
 
